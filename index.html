@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: none;
+        }
+        html{
+            font-size: 10px;
+        }
+        
+        body{
+            width: 100vw;
+            height: 100vh;
+            overflow-x: hidden;
+            font-size: 14px;
+        }
+
+        img[src="moi.jpg"]{
+            border-radius: 50%;
+        }
+
+        td{
+            padding: 20px;
+        }
+
+        table{
+            width: 100%;
+            height: 100%;
+            border-collapse: collapse;
+        }
+        
+        h2{
+            font-size: 16px;
+
+        }
+
+        .hello{
+            background: #ccc;
+            border-radius: 3px;
+            padding-top: 20px;
+            text-align: center;
+            width: 140px;
+            height: 158px;
+            margin-bottom: 20px;
+            margin-top: -50px;/**********************est ce autorise?*/
+
+        }
+        .hello h2{
+            margin-bottom: 15px;
+            color: #00f;
+        }
+
+        .hello p{
+            padding-bottom: 50px;
+        }
+
+        button{
+            background: #ccc;
+            color: #00f;
+            border-radius: 5px;
+            border:  0.5px solid #00f;
+            padding: 8px 6px;
+            letter-spacing: 2px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 1, 0.2);
+            margin-left: 10px;/*************************est ce autorise pour centrer le bouton?*/
+        }
+
+        .domaine{
+            background: #ccc;
+            width: 190px;
+            height: auto;/*la hauteur s'adapte au contenu*/
+            padding: 12px 25px 12px 25px;
+            border-radius: 5px;
+            /* margin: 0 auto; */
+            margin-left: 400px;
+            
+        }
+
+        .domaine ul{
+            padding-left: 20px;
+             
+        }
+        .domaine h2{
+            margin-bottom: 15px;
+            text-align: center;
+            color: rgb(6, 99, 6);
+        }
+        .domaine li{
+            margin-bottom: 10px;
+        }
+
+        .formation{
+            background:#ccc;
+            width: 190px;
+            height: auto;
+            padding: 12px 25px 12px 25px;
+            border-radius: 5px;
+            margin-left: 400px;
+            margin-top: -20px;
+        }
+        .formation ul{
+            padding-left: 20px;
+        }
+        .formation h2{
+            text-align: center;
+            color: rgb(6, 99, 6);
+            margin-bottom: 15px;
+        }
+        .formation li{
+            margin-bottom: 10px;
+
+        }
+        .projet{
+            background:#ccc;
+            padding: 12px 25px 12px 25px;
+            border-radius: 5px;
+            width: 220px;
+            height: 469px;
+            margin-left: -250px;/**********************est ce autorise?*/
+            
+        }
+        .projet ul{
+            padding-left: 20px;
+        }
+        .projet h2{
+            text-align: center;
+            color: rgb(6, 99, 6);
+            margin-bottom: 15px;
+
+        }
+        .projet li{
+            margin-bottom: 10px;
+        }
+        .entete a{
+            text-decoration: none;
+            color: inherit;
+            text-align: center;
+        }
+        .entete{
+            background: rgb(6, 99, 6) ;
+            width: 100px;
+            height: 50px;
+            color:#fff;
+        }
+        #port{
+            text-align: left ;
+            padding-left:20px ;
+        }
+        #real{
+            text-align: right;
+            padding-right: 20px;
+        }
+        .ali_domaine{
+            vertical-align: top;
+            padding-bottom: 0;
+            padding-right: 0;
+        }
+        .ali_formation{
+            vertical-align: top;
+            padding-right: 0;
+
+        }
+        .ali_projet{
+            vertical-align: top;
+            padding-right: 0;
+            
+        }
+        .ali_hello{
+            vertical-align: top;
+
+        }
+        .ali_profil{
+            vertical-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <table border="1">
+        <tr class="entete">
+            <th id="port">PORTFOLIO</th>
+            <th  id="real" colspan="2"><a href="realisation.html">Realisations</a></th>
+        </tr>
+
+        <tr>
+            <td class="ali_profil">
+                <img width="150" height="150" src="moi.jpg">
+            </td>
+            <td class="ali_domaine">
+                <div class="domaine">
+                    <h2>Domaine de competences</h2>
+                    <ul>
+                        <li>Graphisme (Figma, Pixellab)</li>
+                        <li>Programmation Python</li>
+                        <li>Programmation web (HTML, CSS)</li>
+                    </ul>
+                </div>
+            </td>
+            <td class="ali_projet" rowspan="2">
+                <div class="projet">
+                    <h2>Projets deja<br> realises</h2>
+                    <ul>
+                        <li>Flyers Hbd</li>
+                        <li>Reproduction de design existants sur Figma</li>
+                        <li>Conception de sites web vitrines</li>
+                        <li>Conception d'un calculateur de mgp avec Python</li>
+                        <li>Etude des systemes cryptographiques Rsa-Aes</li>
+                        <li>Participation a l'atelier de formation sur les premiers secours et gestes qui sauvent
+                        organise par la Jusa en 2023 a l'Hotel de ville de Yaounde</li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="ali_hello">
+                <div class="hello">
+                    <h2>Hi, je suis<br> Aurelie</h2>
+                    Etudiante en<br> informatique a<br> l'universite de<br> Yaounde 1
+                </div>
+                <button id="message_bouton">Me contacter</button>
+            </td>
+            <td class="ali_formation">
+                <div class="formation">
+                    <h2>Formations</h2>
+                    <ul>
+                        <li>Licence 2 a UY1</li>
+                        <li>BAC LBMendong</li>
+                    </ul>
+
+                    <h2>Langues</h2>
+                    <ul>
+                        <li>Francais</li>
+                        <li>Anglais</li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
